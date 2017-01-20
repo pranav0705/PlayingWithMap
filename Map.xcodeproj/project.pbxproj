@@ -14,6 +14,7 @@
 		3DB6DBB01E32A5F500FCEA5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DB6DBAE1E32A5F500FCEA5A /* LaunchScreen.storyboard */; };
 		3DB6DBBB1E32A5F500FCEA5A /* MapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6DBBA1E32A5F500FCEA5A /* MapTests.swift */; };
 		3DB6DBC61E32A5F500FCEA5A /* MapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6DBC51E32A5F500FCEA5A /* MapUITests.swift */; };
+		3DB6DBD41E32AD3C00FCEA5A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB6DBD31E32AD3C00FCEA5A /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		3DB6DBC11E32A5F500FCEA5A /* MapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DB6DBC51E32A5F500FCEA5A /* MapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapUITests.swift; sourceTree = "<group>"; };
 		3DB6DBC71E32A5F500FCEA5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DB6DBD31E32AD3C00FCEA5A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DB6DBD41E32AD3C00FCEA5A /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +80,7 @@
 		3DB6DB991E32A5F500FCEA5A = {
 			isa = PBXGroup;
 			children = (
+				3DB6DBD31E32AD3C00FCEA5A /* CoreLocation.framework */,
 				3DB6DBA41E32A5F500FCEA5A /* Map */,
 				3DB6DBB91E32A5F500FCEA5A /* MapTests */,
 				3DB6DBC41E32A5F500FCEA5A /* MapUITests */,
