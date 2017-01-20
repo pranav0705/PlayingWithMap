@@ -45,6 +45,17 @@ class ViewController: UIViewController,MKMapViewDelegate {
     
     func action(gestureRecognizer : UIGestureRecognizer) {
         print("Recognized")
+        
+        let touchPoint = gestureRecognizer.locationInView(self.map)
+        let newCoordinates:CLLocationCoordinate2D = map.convertPoint(touchPoint, toCoordinateFromView: self.map)
+        
+        var annotation = MKPointAnnotation()
+        annotation.coordinate = newCoordinates
+        annotation.title = "New Place"
+        annotation.subtitle = "My dream place 2"
+        
+        map.addAnnotation(annotation)
+
     }
 
     override func didReceiveMemoryWarning() {
