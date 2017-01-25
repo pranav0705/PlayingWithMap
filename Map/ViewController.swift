@@ -12,6 +12,10 @@ import CoreLocation
 
 class ViewController: UIViewController,MKMapViewDelegate, CLLocationManagerDelegate {
 
+    @IBOutlet weak var AddressLabel: UILabel!
+    @IBOutlet weak var SpeedLabel: UILabel!
+    @IBOutlet weak var LongitudeLabel: UILabel!
+    @IBOutlet weak var LatitudeLabel: UILabel!
     @IBOutlet var map: MKMapView!
     let locationManager = CLLocationManager()
     override func viewDidLoad() {
