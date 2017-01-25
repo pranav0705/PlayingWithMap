@@ -47,6 +47,10 @@ class ViewController: UIViewController,MKMapViewDelegate, CLLocationManagerDeleg
         let location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(lat, long)
         let region:MKCoordinateRegion = MKCoordinateRegionMake(location, span)
         self.map.setRegion(region, animated: false)
+        
+        self.LatitudeLabel.text = "\(lat)"
+        self.LongitudeLabel.text = "\(long)"
+        self.SpeedLabel.text = "\(manager.location?.speed)"
     }
     
     func setMap()
